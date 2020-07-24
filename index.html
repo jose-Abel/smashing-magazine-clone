@@ -15,13 +15,13 @@
         </div>
         <nav class="nav-bar">
             <ul class="nav-ul">
-                <li class="nav-bar-item">Articles</li>
-                <li class="nav-bar-item">Guides</li>
-                <li class="nav-bar-item">Books</li>
-                <li class="nav-bar-item">Events</li>
-                <li class="nav-bar-item">Membership</li>
-                <li class="flex-row nav-bar-item">
-                    More
+                <li class="nav-bar-item"><a href="https://www.smashingmagazine.com/articles/" class="nav-bar-item-a">Articles</a></li>
+                <li class="nav-bar-item"><a href="https://www.smashingmagazine.com/guides" class="nav-bar-item-a">Guides</a></li>
+                <li class="nav-bar-item"><a href="https://www.smashingmagazine.com/printed-books" class="nav-bar-item-a">Books</a></li>
+                <li class="nav-bar-item"><a href="https://www.smashingmagazine.com/events" class="nav-bar-item-a">Events</a></li>
+                <li class="nav-bar-item"><a href="https://www.smashingmagazine.com/membership" class="nav-bar-item-a">Membership</a></li>
+                <li class="nav-bar-item nav-bar-item-more"><button class="nav-bar-item-button" type="button">
+                    More</button>
                     <span class="cat-item-logo">
                         <img src="img/menu-cat.svg" alt="">
                     </span>
@@ -29,9 +29,11 @@
             </ul>
         </nav>
         <div class="nav-search">
-            <form action="" class="nav-form">
-                <label for="search"></label>
-                <input type="text" id="search" class="search-input" placeholder="Search articles...">
+            <svg class="magnifying-glass">
+                <use xlink:href="img/sprite.svg#iconmagnifying-glass"></use>
+            </svg>
+            <form action="#" class="nav-form">
+                <input type="text" id="search-input" placeholder="Search articles...">
             </form>
         </div>
     </header>

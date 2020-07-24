@@ -1,6 +1,7 @@
 :root {
     --color-primary-light: #d33a2c;
     --color-primary-dark: #c7372a;
+    --color-secondary: rgba(0,0,0,.2);
 }
 
 *, 
@@ -35,36 +36,52 @@ header {
 .logo {
     margin-top: 1rem;
     width: 12rem;
+    cursor: pointer;
 }
 
 .nav-bar {
+    /*testing*/
     border: 1px solid black;
 }
 
 .nav-ul {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav-bar-item {
     font-size: 1.2rem;
     color: white;
     padding: 0.6rem;
-    border: 1px solid black;
     border-radius: 0.7rem;
+    /*testing*/
+    border: 1px solid black;
+}
+
+.nav-bar-item-a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .nav-bar-item:hover {
-    background-color: rgba(0,0,0,.2);
+    background-color: var(--color-secondary);
     cursor: pointer;
 }
 
-.flex-row {
-    display: flex;
-    background-color: rgba(0,0,0,.2);
+.nav-bar-item-button {
+    background-color: var(--color-secondary);
+    
 }
 
-.flex-row:hover {
+.nav-bar-item-more {
+    display: flex;
+    background-color: var(--color-secondary);
+    height: 3rem;
+    margin-left: 0.5rem;
+}
+
+.nav-bar-item-more:hover {
     background-color: rgba(0,0,0,.3);
 }
 
@@ -74,14 +91,46 @@ header {
     display: inline-block;
 }
 
-.search-input {
-    border: 1px solid black;
+.magnifying-glass {
+    width: 1.8rem;
+    height: 2rem;
+    fill: red;
+    transform: translate(2.2rem, 0.1rem);
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
     width: 23rem;
     height: 3.5rem;
     border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    text-indent: 2.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
-.search-input::-moz-input-placeholder {
-    font-size: 100rem;
+#search-input:focus {
+    outline: none;
+    text-decoration: none;
+    border: 3px dotted black;
+    font-weight: 300;
+    box-shadow: none;
+}
+
+#search-input:hover {
+    box-shadow: 0 2.5rem 2rem rgba(0,0,0,.2);
+}
+
+#search-input::-webkit-input-placeholder {
+    font-size: 1.3rem;
+    font-weight: 300;
+    transform: translate(0.5rem, 0.1rem);
 }
 
