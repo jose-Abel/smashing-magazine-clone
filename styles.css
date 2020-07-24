@@ -184,14 +184,14 @@ header {
     height: 5.7rem;
     transform: scale(.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
     transform-origin: 0 100%;
-    transition: transform .2s;
+    transition: all .2s;
     overflow: hidden;
     border-radius: 0.7rem;
     margin-right: 2rem;
 }
 
 .img-wrapper:hover {
-    transform: rotate(0);
+    transform: scale(.84) rotate(0);
 }
 
 .main-card-img {
@@ -200,16 +200,11 @@ header {
     cursor: pointer;
     transform: scale(1.2) rotateZ(calc(11 * 1deg));
     object-fit: cover;
-    transition: transform .3s;
-}
-
-.main-card-user img {
-    position: absolute;
-    z-index: -1;
+    transition: all .3s;
 }
 
 .img-wrapper:hover > * {
-    transform: rotate(0);
+    transform: scale(1.2) rotate(0);
 }
 
 .author-name {
