@@ -1,7 +1,13 @@
 :root {
-    --color-primary-light: #d33a2c;
-    --color-primary-dark: #c7372a;
+    --color-primary-light: #444546;
+    --color-primary-dark: #323232;
     --color-secondary: rgba(0,0,0,.2);
+    --adebiyi-card: #5a5a5a;
+    --edoardo-card: #1e1e1e;
+    --timi-card: #787878;
+    --main-content-primary: #c8c8c8;
+    --main-content-secondary: #dcdcdc;
+
 }
 
 *, 
@@ -18,6 +24,8 @@ body {
     font-size: 62.5%;
 }
 
+/* -----------------------NAVBAR---------------------- */
+
 header {
     background-color: var(--color-primary-light);
     display: flex;
@@ -30,7 +38,6 @@ header {
 .logos {
     display: flex;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .logo {
@@ -100,8 +107,9 @@ header {
     background-color: rgba(0,0,0,.3);
 }
 
-.nav-bar-item-button:active {
+.nav-bar-item-button:focus {
     border: 3px dotted black;
+    outline: none;
 }
 
 .cat-item-logo {
@@ -113,7 +121,7 @@ header {
 .magnifying-glass {
     width: 1.8rem;
     height: 2rem;
-    fill: red;
+    fill: gray;
     transform: translate(2.2rem, 0.1rem);
 }
 
@@ -153,7 +161,7 @@ header {
     transform: translate(0.5rem, 0.1rem);
 }
 
-/* --------------MAIN SECTION------------------- */
+/* ---------------------FIRST SECTION---------------------- */
 
 .main-section {
     background-color: var(--color-primary-dark);
@@ -172,6 +180,12 @@ header {
     font-weight: 300;
 }
 
+.title-top, 
+.title-bottom {
+    background-color: #fff;
+    padding: 0.4rem 0.7rem;
+}
+
 .title-bottom::after {
     content: "";
     position: absolute;
@@ -182,15 +196,9 @@ header {
     box-shadow: 4rem 4rem 1.8rem rgba(0,0,0,1);
 }
 
-.title-top, .title-bottom {
-    background-color: #fff;
-    padding: 0.4rem 0.7rem;
-}
-
 .title-bottom {
     margin: auto 8rem;
 }
-
 
 .main-card {
     width: 100%;
@@ -206,7 +214,6 @@ header {
     flex-direction: column;
     justify-content: space-around;
     height: 30rem;
-    border: 5px solid black;
 }
 
 .padding-top {
@@ -219,6 +226,19 @@ header {
     padding: 3rem 5rem 0 5rem;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.adebiyi {
+    background-color: var(--adebiyi-card);
+}
+
+.edoardo {
+    background-color: var(--edoardo-card);
+}
+
+.timi {
+    background-color: var(--timi-card);
 }
 
 .lighter-text {
@@ -226,21 +246,42 @@ header {
     font-size: 1.1rem;
 }
 
+.main-card-user-a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
 .img-wrapper {
     border: 5px solid #fff;
     width: 5.7rem;
     height: 5.7rem;
-    transform: scale(.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
-    transform-origin: 50% 50%;
+    transform: scale(.84) rotateZ(-11deg);;
+    transform-origin: 0 100%;
     transition: all .2s;
     overflow: hidden;
     border-radius: 0.7rem;
     margin-right: 2rem;
-    box-shadow: 0 3rem 4rem rgba(0,0,0,.4);
+    position: relative;
+    background-color: gray;
+}
+
+.author-name::after {
+    content: "";
+    position: absolute;
+    bottom: 3.2rem;
+    left: 0.8rem;
+    width: 6rem;
+    height: 1.2rem;
+    box-shadow: 4rem 4rem 1.8rem rgba(0,0,0,6);
 }
 
 .img-wrapper:hover {
     transform: scale(.84) rotate(0);
+}
+
+.img-wrapper:hover + .author-name::after {
     box-shadow: none;
 }
 
@@ -248,17 +289,13 @@ header {
     width: 100%;
     margin-right: 2rem;
     cursor: pointer;
-    transform: scale(1.2) rotateZ(calc(11 * 1deg));
+    transform: scale(1.2) rotateZ(11deg);
     object-fit: cover;
     transition: all .3s;
 }
 
 .img-wrapper:hover > * {
     transform: scale(1.2) rotate(0);
-}
-
-.author-name {
-
 }
 
 .article-title-comment {
@@ -271,12 +308,24 @@ header {
     margin-bottom: 1rem;
 }
 
+.article-a {
+    text-decoration: none;
+    color: #fff;
+    fill: #fff;
+}
+
+.article-a:focus,
+.article-a:focus:link,
+.article-a:focus:visited{
+    border: 3px dotted black;
+}
+
 .comments {
     display: flex;
     align-items: flex-start;
 }
 
-.comment-box {
+.comment-icon {
     margin-right: 0.4rem;
     width: 1.3rem;
     height: 1.3rem;
@@ -325,4 +374,72 @@ header {
     height: 2rem;
     fill: #fff;
     margin-top: 1rem;
+}
+/* ----------------------------SECOND PART--------------- */
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem 2rem;
+    background-color: var(--main-content-primary);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all .2s;
+}
+
+.items:hover {
+    transform: scale(1.2);
+    background-color: var(--adebiyi-card);
+    box-shadow: 0 0 1.8rem rgba(0,0,0,0.4);
+    z-index: 100;
+}
+
+.items:hover .arrow2 {
+    background-color: var(--edoardo-card);
+}
+
+.date {
+    text-transform: uppercase;
+    color: gray;
+    padding: 0 2rem;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.item-title {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+.item-author {
+    padding: 2rem 2rem;
+    font-size: 1rem;
+}
+
+.item-author-name {
+    text-decoration: underline;
+    color: gray;
+}
+
+.item-author-name:hover {
+    color: black;
+}
+
+.item-text {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 100;
+}
+
+.arrow2 {
+    width: 6rem;
+    height: 6rem;
+    fill: #fff;
+    padding: 1rem 2rem;
 }
