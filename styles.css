@@ -640,7 +640,6 @@ header {
     top: -3rem;
     width: 15rem;
     height: 15rem;
-    z-index: 0;
     box-shadow: 0rem 1rem 3rem rgba(0,0,0,0.6);
 }
 
@@ -720,7 +719,87 @@ header {
 }
 
 .eigth-text-p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
+    padding: 0 auto;
 }
 
+/* ------------------NINE SECTION-------------------------- */
+
+.nine-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.nine-section-main-content {
+    padding: 4rem 0;
+    color: #fff;
+    padding: 0 5rem;
+
+}
+
+.nine-text {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 4rem 0 2rem 0;
+}
+
+.nine-section-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.nine-section-p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.nine-section-button {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+.nine-section-img {
+    width: 15rem;
+    height: 23rem;
+    margin-right: 10rem;
+    transform: translateY(-4rem) rotateZ(-11deg);
+    transform-origin: left bottom;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+    box-shadow: 2rem 5rem 2rem rgba(0,0,0,0.4);
+}
+
+.nine-section-img:hover {
+    transform: translateY(-4rem) rotateZ(0);
+    box-shadow: none;
+}
+
+/* --------------------------TENTH SECTION----------------- */
+
+.tenth-section {
+    background-color: var(--main-content-primary);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 3rem;
+    grid-gap: 2rem;
+}
+
+.tenth-section-card {
+    padding: 2rem;
+    background-color: #ddd;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+.tenth-img {
+    width: 35rem;
+    height: 20rem;
+}
