@@ -375,7 +375,7 @@ header {
     fill: #fff;
     margin-top: 1rem;
 }
-/* ----------------------------SECOND PART--------------- */
+/* ----------------------------SECOND SECTION--------------- */
 
 .container-1 {
     display: grid;
@@ -445,7 +445,7 @@ header {
     padding: 1rem 2rem;
 }
 
-/*--------------------- THIRD PART -----------------*/
+/*--------------------- THIRD SECTION -----------------*/
 
 .container-2 {
     display: grid;
@@ -514,4 +514,105 @@ header {
 
 .arrow-box {
     margin-top: 10rem;
+}
+
+/* ---------------- FIFTH SECTION-------------------- */
+
+.fifth-section-container {
+    width: 100%;
+    background-color: var(--main-content-primary);
+}
+
+.fifth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    color: white;
+}
+
+.fifth-section-h2 {
+    font-size: 2.5rem;
+}
+
+.fifth-section-p {
+    width: 45%;
+    line-height: 2rem;
+    font-weight: 100;
+}
+
+.text-all-articles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-content-primary);
+    height: 15rem;
+}
+
+.text-all-articles {
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid var(--color-primary-dark);
+}
+
+.fifth-section-button {
+    width: 18rem;
+}
+
+.fifth-section-bottom {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* ----------------------SIXTH SECTION-------------------- */
+
+.big-box-date {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+}
+
+.dot {
+    border-radius: 50%;
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.sixth-section-h2 {
+    font-size: 3rem;
+    width: 65%;
+    text-align: center;
+    text-decoration-color: gray;
+}
+
+.sixth-section-p {
+    width: 60%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 1rem 0;
+}
+
+.bolder-text {
+    font-weight: 700;
+}
+
+.sixth-section-button {
+    width: 25rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sixth-sec-img {
+    width: 50rem;
+    margin: 3rem 0;
 }
