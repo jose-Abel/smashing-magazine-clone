@@ -390,6 +390,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     transition: all .2s;
+    cursor: pointer;
 }
 
 .items:hover {
@@ -442,4 +443,75 @@ header {
     height: 6rem;
     fill: #fff;
     padding: 1rem 2rem;
+}
+
+/*--------------------- THIRD PART -----------------*/
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--main-content-primary);
+}
+
+.big-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary-dark);
+    margin: auto 2rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.third-sec-img {
+    width: 15rem;
+    margin: 2.5rem auto;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.change-color:hover {
+    color: var(--color-primary-dark);
+}
+
+.big-box-h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.big-box-p {
+    font-size: 1.2rem;
+    width: 65%;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.box-button {
+    width: 11rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: gray;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+} 
+
+.box-button:hover {
+    background-color: white;
+    color: var(--color-primary-dark);
+}
+
+.box-bottom {
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-bottom: 3.5rem;
+}
+
+.arrow-box {
+    margin-top: 10rem;
 }
