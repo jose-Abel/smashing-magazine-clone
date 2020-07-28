@@ -454,6 +454,13 @@ header {
   background-color: var(--main-content-primary);
 }
 
+.grayscale {
+  margin: 3rem auto;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--card-2);
+}
+
 .big-box {
   display: flex;
   flex-direction: column;
