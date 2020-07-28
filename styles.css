@@ -618,7 +618,7 @@ header {
   margin: 3rem 0;
 }
 
-  /* -----------------SEVENTH SECTION-------------- */
+/* -----------------SEVENTH SECTION-------------- */
 
 .section-seventh {
   background-color: var(--main-content-primary);
@@ -673,7 +673,7 @@ header {
   line-height: 1.8rem;
 }
 
-  /* -----------------EIGTH SECTION-------------- */
+/* -----------------EIGTH SECTION-------------- */
 
 .eigth-section-container {
   display: grid;
@@ -722,7 +722,6 @@ header {
 .eigth-text-p {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding: auto;
 }
 
 /* ------------------NINE SECTION-------------------------- */
@@ -779,7 +778,7 @@ header {
   box-shadow: none;
 }
 
-  /* --------------------------TENTH SECTION----------------- */
+/* --------------------------TENTH SECTION----------------- */
 
 .tenth-section {
   background-color: var(--main-content-primary);
@@ -888,7 +887,7 @@ header {
   padding-bottom: 4rem;
 }
 
-  /* -------------------FOOTER SECTION--------------- */
+/* -------------------FOOTER SECTION--------------- */
 
 .footer {
   display: flex;
