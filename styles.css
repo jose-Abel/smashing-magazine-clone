@@ -170,16 +170,16 @@ header {
   }
 
 .main-title {
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, 0.8);
   position: absolute;
   font-size: 2.3rem;
   top: 9rem;
   text-align: center;
   z-index: 100;
   font-weight: 300;
-  }
+}
 
-.title-top, 
+.title-top,
 .title-bottom {
   background-color: var(--white);
   padding: 0.4rem 0.7rem;
@@ -500,7 +500,7 @@ header {
   border: none;
   cursor: pointer;
   margin-bottom: 1rem;
-} 
+}
 
 .box-button:hover {
   background-color: var(--white);
@@ -641,8 +641,8 @@ header {
   top: -3rem;
   width: 15rem;
   height: 15rem;
-  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.6);
-  }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.6);
+}
 
 .seventh-section-wrapper:hover {
   box-shadow: none;
@@ -722,7 +722,7 @@ header {
 .eigth-text-p {
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding: 0 auto;
+  padding: 0rem auto;
 }
 
 /* ------------------NINE SECTION-------------------------- */
